@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img01"
+    tools:context=".CateringCount">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallmate"
+        android:text="HALL MATE"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/hallmate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/range"
+        android:text="Range\n\nMinimum: 100       Maximum: 1000"
+        android:layout_below="@+id/hallmate"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/count"
+        android:text="Enter plate Count: "
+        android:layout_below="@+id/range"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/plateCountInput"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/count"
+        android:layout_alignBaseline="@+id/count"
+        android:layout_marginStart="10dp"
+        android:inputType="number"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalcount"
+        android:text="Total Amount for Catering: "
+        android:layout_below="@+id/plateCountInput"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/advance"
+        android:text="Advance payment: "
+        android:layout_below="@+id/totalcount"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remaining"
+        android:text="Remaining payment: "
+        android:layout_below="@+id/advance"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Done"
+        android:text="Done"
+        android:layout_below="@+id/remaining"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

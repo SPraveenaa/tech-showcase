@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KolMoreImg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img01">
+
+        <TextView
+            android:id="@+id/hallmate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HALL MATE"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/hallmate" />
+
+        <!-- Select Button -->
+        <Button
+            android:id="@+id/select_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hallmate"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Select" />
+
+        <ImageView
+            android:id="@+id/kolimg01"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/select_button"
+            android:src="@drawable/kolimg01" />
+
+        <ImageView
+            android:id="@+id/kolimg02"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/kolimg01"
+            android:src="@drawable/kolimg02" />
+
+        <ImageView
+            android:id="@+id/kolimg03"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/kolimg02"
+            android:src="@drawable/kolimg03" />
+
+    </RelativeLayout>
+
+</ScrollView>

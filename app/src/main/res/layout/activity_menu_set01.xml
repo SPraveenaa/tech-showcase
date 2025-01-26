@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img01"
+    tools:context=".MenuSet01">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallmate"
+        android:text="HALL MATE"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/hallmate" />
+
+    <TextView
+        android:id="@+id/MenuSet01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hallmate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="49dp"
+        android:text="Menu Set 01\nBudget Friendly Set"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/Plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MenuSet01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="49dp"
+        android:text="* Per plate Rs.3000/="
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Plate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Rice items:\n • White samba rice\n • Fried rice\n\nCurry items:\n • Chicken spicy curry\n • Fish Ambul Thiyal\n • Pumpkin Curry\n • Dhal curry\n • Beans curry\n • Papadam\n\nDessert:\n • Ice cream"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select"
+        android:text="Select"
+        android:layout_below="@+id/Details"
+        android:layout_marginLeft="250dp"
+        />
+
+</RelativeLayout>

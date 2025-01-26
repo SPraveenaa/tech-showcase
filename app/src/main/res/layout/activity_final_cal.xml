@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img01"
+    tools:context=".FinalCal">
+
+    <!-- Title Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallmate"
+        android:text="HALL MATE"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/hallmate" />
+
+    <!-- Heading Section -->
+    <TextView
+        android:id="@+id/finalcalculationHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Final Calculation"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Display the Values (13 items) -->
+    <TextView
+        android:id="@+id/priceHallPac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price Deco: "
+        android:textSize="18sp"
+        android:layout_below="@id/finalcalculationHeading"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/advanceHallPac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:layout_below="@id/priceHallPac"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/remainingHallPac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advance Payment Deco: "
+        android:textSize="18sp"
+        android:layout_below="@id/advanceHallPac"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/plateCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:layout_below="@id/remainingHallPac"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event: "
+        android:textSize="18sp"
+        android:layout_below="@id/plateCount"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/advanceAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None"
+        android:textSize="18sp"
+        android:layout_below="@id/totalAmount"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/remainingAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall: "
+        android:textSize="18sp"
+        android:layout_below="@id/advanceAmount"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/decorationTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None"
+        android:textSize="18sp"
+        android:layout_below="@id/remainingAmount"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <!-- Additional TextViews for other details (Items 9 to 13) -->
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Item 1: "
+        android:textSize="18sp"
+        android:layout_below="@id/decorationTheme"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/totalPriceDeco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value 1"
+        android:textSize="18sp"
+        android:layout_below="@id/menu"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/advancePaymentDeco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Item 2: "
+        android:textSize="18sp"
+        android:layout_below="@id/totalPriceDeco"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value 2"
+        android:textSize="18sp"
+        android:layout_below="@id/advancePaymentDeco"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/hall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Item 3: "
+        android:textSize="18sp"
+        android:layout_below="@id/event"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/extraItem3Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value 3"
+        android:textSize="18sp"
+        android:layout_below="@id/hall"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black" />
+
+    <!-- Buttons Section -->
+    <Button
+        android:id="@+id/processbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extraItem3Value"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="120dp"
+        android:text="Process Payment" />
+
+    <Button
+        android:id="@+id/displayValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/processbtn"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"
+        android:text="Display Values" />
+
+</RelativeLayout>

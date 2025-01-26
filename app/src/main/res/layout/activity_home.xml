@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img01"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallmate"
+        android:text="HALL MATE"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/hallmate"
+        />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/place"
+        android:layout_below="@+id/home"
+        android:text="Place: Avissawella"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <!-- Event Spinner -->
+    <Spinner
+        android:id="@+id/eventSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/edit_text"
+        android:spinnerMode="dropdown"/>
+    <!--  Spinner placeSpinner = findViewById(R.id.placeSpinner);
+Spinner eventSpinner = findViewById(R.id.eventSpinner);
+
+// Create an array of places
+String[] places = {"Dehiowita", "Avissawella"};
+// Create an array of events
+String[] events = {"Wedding", "Birthday"};
+
+// Create ArrayAdapters using the string arrays and a default spinner layout
+ArrayAdapter<String> placeAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, places);
+ArrayAdapter<String> eventAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, events);
+
+// Specify the layout to use when the list of choices appears
+placeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+eventAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+// Apply the adapters to the spinners
+placeSpinner.setAdapter(placeAdapter);
+eventSpinner.setAdapter(eventAdapter);
+  -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GO"
+        android:layout_below="@+id/eventSpinner"
+        android:text="GO"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="170dp"
+        />
+
+
+</RelativeLayout>
+
+
+

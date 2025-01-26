@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img01"
+    tools:context=".CatKas">
+
+    <!-- Existing Views -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallmate"
+        android:text="HALL MATE"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/hallmate" />
+
+    <TextView
+        android:id="@+id/catKashyapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hallmate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="49dp"
+        android:text="Catering Service of Kashyapa \nHotel"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DetailsKas"
+        android:text="Details of catering..."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/catKashyapa"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        />
+
+    <!-- RadioGroup for Options -->
+    <RadioGroup
+        android:id="@+id/menuSetOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DetailsKas"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_setMenu01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Set 01 - Budget Friendly Set \n (per plate Rs.3000)"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_setMenu02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Set 02 - Standard Set \n (per plate Rs.5000)"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_setMenu03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Set 03 - Premium Set \n (per plate Rs.7500)"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            />
+
+    </RadioGroup>
+
+    <!-- Buttons -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DONE"
+        android:text="DONE"
+        android:textStyle="bold"
+        android:layout_below="@+id/menuSetOptions"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="65dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/skip"
+        android:text="skip"
+        android:textStyle="bold"
+        android:layout_below="@+id/menuSetOptions"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="255dp" />
+
+
+
+</RelativeLayout>
